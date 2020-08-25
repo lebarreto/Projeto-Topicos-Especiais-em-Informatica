@@ -2,13 +2,9 @@ create schema anotacao;
 
 use anotacao;
 
-drop user 'admin'@'localhost';
+create user 'root'@'localhost' identified by 'root123';
 
-flush privileges;
-
-create user 'user'@'localhost' identified by 'root123';
-
-grant select, insert, delete, update on anotacao.* to user@'localhost';
+grant select, insert, delete, update on anotacao.* to root@'localhost';
 
 create table usr_usuario (
   usr_id bigint unsigned not null auto_increment,
