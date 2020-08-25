@@ -2,6 +2,10 @@ create schema anotacao;
 
 use anotacao;
 
+drop user 'admin'@'localhost';
+
+flush privileges;
+
 create user 'user'@'localhost' identified by 'root123';
 
 grant select, insert, delete, update on anotacao.* to user@'localhost';
