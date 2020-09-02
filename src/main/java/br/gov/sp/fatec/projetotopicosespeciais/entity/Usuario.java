@@ -63,8 +63,4 @@ public class Usuario {
 		return autorizacao;
 	}
 	
-	public Usuario() {
-		// TODO Auto-generated constructor stub
-	}
-	
 }
